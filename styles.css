@@ -149,7 +149,6 @@ p
     padding: 1.5rem;
     display: flex;
     flex-direction: column;
-    flex: 1 0 200px;
     gap: 1rem;
     border: none;
     border-radius: 0.5rem;
@@ -243,6 +242,6 @@ p
 
     .user-comment
     {
-        width: 335px;
+        width: 315px;
     }
 }
