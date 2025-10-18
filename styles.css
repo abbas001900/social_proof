@@ -133,6 +133,7 @@ p
     border-radius: 0.5rem;
     padding: 0.5rem 0rem 0.5rem 1.5rem;
     margin-top: 0.5rem;
+    gap: 1rem;
 }
 
 .stars
@@ -142,7 +143,7 @@ p
     font-weight: bold;
 }
 
-.user-comment
+.user_comment
 {
     background: var(--Testimonial-Card-Background);
     color: var(--White-for-testimonial-card-text);
@@ -154,14 +155,14 @@ p
     border-radius: 0.5rem;
 }
 
-.user-comment:nth-child(1)
+.user_comment:nth-child(1)
 {
-    flex: 1;
+    flex: 1 1 0;
 }
 
-.user-comment:nth-child(2)
+.user_comment:nth-child(2)
 {
-    flex: 1;
+    flex: 1 1 0;
 }
 
 .identification
@@ -181,8 +182,22 @@ p
     color: var(--Verified-Buyer-Text);
 }
 
+.user_comment:hover
+{
+    background: var(--Testimonial-Card-Hover-Background);
+}
+
+.ratings:hover
+{
+    background: var(--Rating-Hover-Background);
+}
+
 @media (max-width: 768px) 
 {
+    main 
+    {
+        width: 100%;
+    }
     #top-section
     {
         flex-direction: column;
@@ -214,8 +229,10 @@ p
 
     .ratings
     {
+        padding: 0;
         flex-direction: column;
         align-items: center;
+        gap: 0;
     }
 
     .ratings:nth-child(1)
@@ -240,8 +257,21 @@ p
         flex-direction: column;
     }
 
-    .user-comment
+    .user_comment
     {
         width: 315px;
+        height: 200px;
+    }
+
+    .user_comment:nth-child(1)
+    {
+        flex: none;
+        height: 200px;
+    }
+
+    .user_comment:nth-child(2)
+    {
+        flex: none;
+        height: 200px;
     }
 }
