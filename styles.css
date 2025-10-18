@@ -28,14 +28,16 @@ body
     display: flex;
     align-items: start;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
+    line-height: 1.5;
 }
 
 main
 {
     margin-top: 10%;
     background: none;
-    width: 800px;
+    max-width: 800px;
+    width: 90%;
     height: fit-content;
     display: flex;
     flex-direction: column;
@@ -46,7 +48,7 @@ main
 img
 {
     height: 3rem;
-    border-radius: 5rem;
+    border-radius: 50%;
 }
 
 h3
@@ -134,6 +136,7 @@ p
     padding: 0.5rem 0rem 0.5rem 1.5rem;
     margin-top: 0.5rem;
     gap: 1rem;
+    transition: background 0.3s ease;
 }
 
 .stars
@@ -148,11 +151,14 @@ p
     background: var(--Testimonial-Card-Background);
     color: var(--White-for-testimonial-card-text);
     padding: 1.5rem;
+    width: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
     gap: 1rem;
     border: none;
     border-radius: 0.5rem;
+    transition: background 0.3s ease;
 }
 
 .user_comment:nth-child(1)
@@ -259,19 +265,17 @@ p
 
     .user_comment
     {
-        width: 315px;
-        height: 200px;
+        max-width: 315px;
+        height: fit-content;
     }
 
     .user_comment:nth-child(1)
     {
         flex: none;
-        height: 200px;
     }
 
     .user_comment:nth-child(2)
     {
         flex: none;
-        height: 200px;
     }
 }
