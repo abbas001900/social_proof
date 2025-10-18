@@ -29,6 +29,7 @@ body
     align-items: start;
     justify-content: center;
     min-height: 100vh;
+    font-weight: bold;
     line-height: 1.5;
 }
 
@@ -208,6 +209,7 @@ p
     {
         flex-direction: column;
         align-items: center;
+        gap: 2rem;
     }
 
     #top-section header
@@ -229,16 +231,17 @@ p
 
     #bottom-section
     {
+        margin-top: 2rem;
         padding: 0.5rem;
         align-items: center;
     }
 
     .ratings
     {
-        padding: 0;
+        padding: 1.2rem;
         flex-direction: column;
         align-items: center;
-        gap: 0;
+        gap: 0.3rem;
     }
 
     .ratings:nth-child(1)
@@ -265,7 +268,7 @@ p
 
     .user_comment
     {
-        max-width: 315px;
+        max-width: 25rem;
         height: fit-content;
     }
 
@@ -277,5 +280,14 @@ p
     .user_comment:nth-child(2)
     {
         flex: none;
+    }
+}
+
+@media (max-width: 375px)
+{
+    .user_comment
+    {
+        max-width: 100%;
+        height: fit-content;
     }
 }
